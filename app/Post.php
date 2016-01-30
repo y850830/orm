@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    // protected $fillable = [
-    //     'title',
-    //     'content',
-    //     'is_feature',
-    // ];
+    protected $fillable = [
+        'title',
+        'content',
+        'is_feature',
+    ];
+    protected $guarded =['*'];
 }
