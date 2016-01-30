@@ -59,11 +59,15 @@ Route::get('orm', function () {
 
 	// $posts	=\App\Post::all();
  	// 	print_r($posts->toJson());
- 	$posts = \App\Post::find(3);
- 	dd($posts->comments);
+ 	
+ 	// $posts = \App\Post::find(3);
+ 	// dd($posts->comments);
  	// foreach ($posts->comments as $comment) {
  	// 	echo $comment->name.',';
  	// }
+
+ 	$comment = \App\Comment::find(3);
+ 	dd($comment->posts);
 });
 /*
 |--------------------------------------------------------------------------
