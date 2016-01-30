@@ -41,9 +41,15 @@ Route::get('orm', function () {
 	// $posts->update([
 	// 	'title'=>'utitle',
 	// ]);
-	$posts = \App\Post::find(2);
-	$posts->title = 'sutitle';
-	$posts->save();
+
+	// $posts = \App\Post::find(2);
+	// $posts->title = 'sutitle';
+	// $posts->save();
+
+	// $posts = \App\Post::find(2);
+	// $posts->delete();
+
+	\App\Post::destroy(3,9,5);
 });
 
 /*
