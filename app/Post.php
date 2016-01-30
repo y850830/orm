@@ -12,4 +12,8 @@ class Post extends Model
         'is_feature',
     ];
     protected $guarded =['*'];
+    public function comments()
+    {
+    	return $this->hasMany(Comment::class);
+    }
 }
