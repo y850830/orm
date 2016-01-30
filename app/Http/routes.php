@@ -34,8 +34,16 @@ Route::get('orm', function () {
 	// $posts = \App\Post::find(1);
 	// dd($posts);
 
-	$posts = \App\Post::where('id','<',10)->orwhere('title','=','title')->get();
-	dd($posts);
+	// $posts = \App\Post::where('id','<',10)->orwhere('title','=','title')->get();
+	// dd($posts);
+
+	// $posts = \App\Post::find(1);
+	// $posts->update([
+	// 	'title'=>'utitle',
+	// ]);
+	$posts = \App\Post::find(2);
+	$posts->title = 'sutitle';
+	$posts->save();
 });
 
 /*
