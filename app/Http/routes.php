@@ -49,9 +49,17 @@ Route::get('orm', function () {
 	// $posts = \App\Post::find(2);
 	// $posts->delete();
 
-	\App\Post::destroy(3,9,5);
-});
+	// \App\Post::destroy(3,9,5);
 
+	// $posts=	\App\Post::all();	
+	// foreach($posts	as	$post)	
+	// {		
+	// 	echo	$post->title;	
+	// }
+
+	$posts	=\App\Post::all();
+ 	print_r($posts->toJson());
+});
 /*
 |--------------------------------------------------------------------------
 | Application Routes
